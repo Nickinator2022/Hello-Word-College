@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;600;700&display=swap");
+#landing-img {
+  width: 100%; }
+
+#home-content #about-college {
+  padding: 0 1em; }
+  #home-content #about-college h2 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem; }
+  #home-content #about-college hr {
+    border: none;
+    height: 0.3rem;
+    margin: 0;
+    background-color: #8ce242;
+    width: 13rem; }
+
+#home-content #homepage-box {
+  display: grid;
+  grid-template-areas: "box-1 home-image" "box-2 home-image"; }
+  #home-content #homepage-box .stat-box {
+    position: relative;
+    width: 50vw;
+    color: #fff; }
+    #home-content #homepage-box .stat-box p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem; }
+      #home-content #homepage-box .stat-box p span {
+        font-size: 2rem; }
+    #home-content #homepage-box .stat-box:first-child {
+      grid-area: box-1;
+      background-color: #8ce242; }
+    #home-content #homepage-box .stat-box:nth-child(2) {
+      grid-area: box-2;
+      background-color: #aaaaaa; }
+  #home-content #homepage-box #homepage-img {
+    grid-area: home-image;
+    width: 50vw;
+    height: 100%; }
+
+@media (min-width: 768px) {
+  #landing-img {
+    border-top: 1.3rem solid #f0f0f0;
+    width: 100%;
+    height: 80vh; }
+  #home-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    #home-content #about-college {
+      padding: 0;
+      padding-right: 3rem; }
+      #home-content #about-college h2 {
+        font-size: 2rem; }
+      #home-content #about-college hr {
+        width: 15rem; }
+      #home-content #about-college p {
+        font-size: 1.2rem; }
+    #home-content #homepage-box {
+      gap: 1rem; }
+      #home-content #homepage-box .stat-box {
+        min-width: 12.5rem;
+        width: 100%; }
+        #home-content #homepage-box .stat-box p {
+          padding: 3rem; }
+      #home-content #homepage-box #homepage-img {
+        width: 27vw;
+        max-width: 19.875rem; } }
+
+@media (min-width: 1080px) {
+  #home-content #about-college p {
+    line-height: 2.5; } }
+
+#programs-content {
+  padding: 0 1em; }
+  #programs-content ul {
+    padding: 0; }
+    #programs-content ul li a {
+      color: #666666; }
+      #programs-content ul li a::after {
+        content: " / "; }
+    #programs-content ul li .breadcrumb-last {
+      color: #000;
+      font-weight: 600; }
+  #programs-content h2 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem; }
+  #programs-content hr {
+    border: none;
+    height: 0.3rem;
+    margin: 0;
+    background-color: #8ce242;
+    width: 13rem; }
+  #programs-content #programs-container .program {
+    margin: 2.5rem 0;
+    box-shadow: 0.5px 0.5px 5px #474747;
+    padding-bottom: 1rem; }
+    #programs-content #programs-container .program img {
+      width: 100%;
+      height: 45vh; }
+    #programs-content #programs-container .program .text {
+      padding: 0 2rem; }
+
+@media (min-width: 768px) {
+  #programs-content {
+    padding: 0;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+    #programs-content ul li a::after {
+      display: inline-block;
+      padding-left: 0.315rem; }
+    #programs-content ul li a:hover {
+      text-decoration: underline; }
+    #programs-content #programs-container {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 2rem; }
+      #programs-content #programs-container .program {
+        margin: 0; }
+        #programs-content #programs-container .program img {
+          height: 35vh; } }
+
+@media (min-width: 1080px) {
+  #programs-content #programs-container {
+    grid-template-columns: repeat(3, auto); } }
+
+.main-form {
+  border: 1px solid #e7e4e4;
+  border-radius: 0.4rem;
+  padding: 0rem 0.75rem; }
+  .main-form #form-header h2 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+    font-size: 1.3rem;
+    margin: 0.5rem 0rem; }
+  .main-form #form-header hr {
+    border: none;
+    height: 0.3rem;
+    margin: 0;
+    background-color: #8ce242; }
+  .main-form fieldset {
+    border: none;
+    padding: 0rem;
+    margin: 0; }
+    .main-form fieldset h3 {
+      font-size: 1.1rem;
+      font-weight: 500; }
+    .main-form fieldset input {
+      border: 1px solid #b3b3b3;
+      width: 80%;
+      padding: 0.3rem; }
+    .main-form fieldset select {
+      border: 1px solid #b3b3b3;
+      width: 80%;
+      padding: 0.3rem; }
+  .main-form #form-actions {
+    padding: 1rem 0rem; }
+    .main-form #form-actions button {
+      background-color: #8ce242;
+      border: none;
+      border: 1px solid #b3b3b3;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: bold;
+      width: 40%;
+      padding: 0.3rem 0;
+      cursor: pointer; }
+    .main-form #form-actions a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #4c858b; }
+
+#form-header {
+  width: 100%;
+  display: block; }
+  #form-header h1 {
+    max-width: none; }
+
+@media (min-width: 768px) {
+  .main-form #form-header h2 {
+    font-size: 1.7rem; }
+  .main-form fieldset h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1rem 0; }
+  .main-form fieldset .field-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem; }
+    .main-form fieldset .field-group div {
+      width: fit-content; }
+      .main-form fieldset .field-group div label {
+        font-size: 1.2rem; }
+      .main-form fieldset .field-group div input {
+        width: 15rem;
+        padding: 0.5rem; }
+      .main-form fieldset .field-group div select {
+        width: 15rem;
+        padding: 0.5rem; }
+  .main-form #form-actions button {
+    width: 9.25rem; }
+  #form-footer {
+    text-align: center; }
+    #form-footer #logo-footer h1 {
+      max-width: 100%; }
+    #form-footer div {
+      width: auto;
+      margin: 0; }
+    #form-footer #address-footer {
+      padding: 1rem 0;
+      display: block; }
+      #form-footer #address-footer p {
+        padding: 0.5rem 0;
+        width: unset; } }
+
+@media (min-width: 768px) {
+  #apply-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+    #apply-content #apply-form {
+      max-width: 53.75rem;
+      margin-left: auto;
+      margin-right: auto; } }
+
+#apply-results #apply-results-form {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto; }
+  #apply-results #apply-results-form #form-actions button {
+    width: 100%; }
+
+@media (min-width: 768px) {
+  #apply-results #apply-results-form {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto; }
+  #apply-results p {
+    font-size: 1.4rem; }
+  #apply-results #form-actions button {
+    width: 100%;
+    font-size: 1.5rem; } }
+
+@media (min-width: 450px) {
+  #login-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+    #login-content #login-form {
+      max-width: 25rem;
+      margin-left: auto;
+      margin-right: auto; }
+      #login-content #login-form #form-header h2 {
+        font-size: 1.7rem; }
+      #login-content #login-form #login-field-group {
+        display: block; }
+        #login-content #login-form #login-field-group div {
+          padding: 1rem 0; }
+          #login-content #login-form #login-field-group div label {
+            font-size: 1.2rem; }
+          #login-content #login-form #login-field-group div input {
+            width: 15rem;
+            padding: 0.5rem; }
+      #login-content #login-form #form-actions button {
+        width: 9.25rem; } }
+
+#student-hub-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem; }
+  #student-hub-content #student-hub-nav {
+    border: 1px solid #e7e4e4;
+    border-radius: 0.4rem; }
+    #student-hub-content #student-hub-nav #nav-header {
+      background-color: #707070;
+      color: #fff;
+      font-weight: bold;
+      height: 2rem; }
+  #student-hub-content #student-info {
+    border: 1px solid #e7e4e4;
+    border-radius: 0.4rem;
+    padding: 0rem 1.5rem; }
+    #student-hub-content #student-info #student-info-header h2 {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      font-size: 1.7rem; }
+    #student-hub-content #student-info #student-info-header hr {
+      border: none;
+      height: 0.3rem;
+      margin: 0;
+      background-color: #8ce242; }
+    #student-hub-content #student-info p {
+      font-size: 1.2rem; }
+      #student-hub-content #student-info p span {
+        font-weight: 500; }
+
+@media (max-width: 768px) {
+  #student-hub-content {
+    display: block; }
+    #student-hub-content #student-hub-nav {
+      display: none; } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 5px;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 1.6rem;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  h1 a {
+    color: #6fc722; }
+    h1 a:hover {
+      color: #63b11e; }
+
+nav > div {
+  background-color: #f0f0f0; }
+
+#mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  padding: 0.5rem; }
+  #mobile-menu p {
+    font-size: 1.4rem;
+    margin: 0; }
+  #mobile-menu #menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../images/burger.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    transition: transform 0.5s; }
+
+nav > ul {
+  padding: 1rem 0;
+  margin: 0;
+  display: none; }
+  nav > ul li {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+    nav > ul li .nav-link {
+      width: 5.275rem;
+      margin-left: auto;
+      margin-right: auto; }
+    nav > ul li a {
+      display: block;
+      width: 100%;
+      color: #4f7a29;
+      padding-bottom: 0.5rem; }
+      nav > ul li a:hover {
+        background-color: #dddddd; }
+    nav > ul li hr {
+      margin: 0; }
+
+footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  background-color: #f5f5f5;
+  text-align: center; }
+  footer h1 {
+    margin: 0; }
+  footer p {
+    margin: 0;
+    padding: 0.5rem 0; }
+
+@media (min-width: 768px) {
+  header {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+  h1 {
+    max-width: fit-content; }
+  nav > div {
+    display: none; }
+  nav > ul {
+    margin: 0;
+    width: fit-content;
+    display: flex; }
+    nav > ul li {
+      padding: 0 4.5vw; }
+      nav > ul li .nav-link {
+        margin: 0;
+        width: fit-content; }
+      nav > ul li a {
+        display: inline; }
+        nav > ul li a:hover {
+          text-decoration: underline; }
+      nav > ul li hr {
+        display: none; }
+  footer {
+    text-align: left; }
+    footer div {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto; }
+    footer #address-footer {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      footer #address-footer p {
+        padding: 0;
+        width: fit-content; } }

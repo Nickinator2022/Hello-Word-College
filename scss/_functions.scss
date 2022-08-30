@@ -1,0 +1,23 @@
+@mixin h2-style {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
+}
+
+@mixin heading-hr {
+  border: none;
+  height: 0.3rem;
+  margin: 0;
+  background-color: $secondary-color;
+}
+@mixin button1-style {
+  background-color: $secondary-color;
+  border: none;
+  border: 1px solid #b3b3b3;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  width: 40%;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}

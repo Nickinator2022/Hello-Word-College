@@ -1,0 +1,111 @@
+#landing-img {
+  width: 100%;
+}
+
+#home-content {
+  #about-college {
+    padding: 0 1em;
+    h2 {
+      @include h2-style();
+    }
+    hr {
+      @include heading-hr();
+      width: 13rem;
+    }
+  }
+  #homepage-box {
+    display: grid;
+    grid-template-areas:
+      "box-1 home-image"
+      "box-2 home-image";
+
+    .stat-box {
+      position: relative;
+      width: 50vw;
+      color: #fff;
+
+      p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      &:first-child {
+        grid-area: box-1;
+        background-color: $secondary-color;
+      }
+      &:nth-child(2) {
+        grid-area: box-2;
+        background-color: #aaaaaa;
+      }
+    }
+
+    #homepage-img {
+      grid-area: home-image;
+      width: 50vw;
+      height: 100%;
+    }
+  }
+}
+
+// Media Queries
+
+@media (min-width: 768px) {
+  #landing-img {
+    border-top: 1.3rem solid #f0f0f0;
+    width: 100%;
+    height: 80vh;
+  }
+  #home-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    #about-college {
+      padding: 0;
+      padding-right: 3rem;
+      h2 {
+        font-size: 2rem;
+      }
+      hr {
+        width: 15rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    #homepage-box {
+      gap: 1rem;
+
+      .stat-box {
+        min-width: 12.5rem;
+        width: 100%;
+        p {
+          padding: 3rem;
+        }
+      }
+      #homepage-img {
+        width: 27vw;
+        max-width: 19.875rem;
+      }
+    }
+  }
+}
+@media (min-width: 1080px) {
+  #home-content {
+    #about-college {
+      p {
+        line-height: 2.5;
+      }
+    }
+  }
+}

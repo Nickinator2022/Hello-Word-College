@@ -1,0 +1,41 @@
+// Apply page
+@media (min-width: 768px) {
+  #apply-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    #apply-form {
+      max-width: 53.75rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// Apply results-page
+#apply-results {
+  #apply-results-form {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    #form-actions button {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  #apply-results {
+    #apply-results-form {
+      max-width: 30rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    #form-actions button {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+}

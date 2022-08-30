@@ -1,0 +1,182 @@
+// Type 'npm run sass' in the terminal
+@import "variables";
+@import "functions";
+@import "home-page";
+@import "programs-page";
+@import "form-pages";
+@import "apply-page";
+@import "login-page";
+@import "student-hub.scss";
+//Default Settings
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5px;
+  padding: 0;
+  font-family: $default-font;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Header area
+
+h1 {
+  font-size: 1.6rem;
+  white-space: nowrap;
+  text-align: center;
+  font-family: $header-font;
+
+  a {
+    color: $primary-color;
+    &:hover {
+      color: darken($primary-color, 5%);
+    }
+  }
+}
+
+nav > div {
+  background-color: #f0f0f0;
+}
+
+#mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  padding: 0.5rem;
+  p {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  #menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../images/burger.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin-left: 10px;
+    transition: transform 0.5s;
+  }
+}
+nav > ul {
+  padding: 1rem 0;
+  margin: 0;
+  display: none;
+
+  li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    .nav-link {
+      width: 5.275rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      color: #4f7a29;
+      padding-bottom: 0.5rem;
+
+      &:hover {
+        background-color: #dddddd;
+      }
+    }
+    hr {
+      margin: 0;
+    }
+  }
+}
+
+// Footer
+
+footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+}
+
+// Media Queries
+
+@media (min-width: 768px) {
+  header {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  h1 {
+    max-width: fit-content;
+  }
+
+  nav > div {
+    display: none;
+  }
+  nav > ul {
+    margin: 0;
+    width: fit-content;
+    display: flex;
+
+    li {
+      padding: 0 4.5vw;
+
+      .nav-link {
+        margin: 0;
+        width: fit-content;
+      }
+      a {
+        display: inline;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      hr {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    text-align: left;
+    div {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #address-footer {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        padding: 0;
+        width: fit-content;
+      }
+    }
+  }
+}

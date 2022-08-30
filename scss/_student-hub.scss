@@ -1,0 +1,49 @@
+#student-hub-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  #student-hub-nav {
+    border: 1px solid #e7e4e4;
+    border-radius: 0.4rem;
+    // max-width: 16.6875rem;
+    #nav-header {
+      background-color: #707070;
+      color: #fff;
+      font-weight: bold;
+      height: 2rem;
+    }
+  }
+
+  #student-info {
+    border: 1px solid #e7e4e4;
+    border-radius: 0.4rem;
+    padding: 0rem 1.5rem;
+    // max-width: 30rem;
+    #student-info-header {
+      h2 {
+        @include h2-style();
+      }
+      hr {
+        @include heading-hr();
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #student-hub-content {
+    display: block;
+
+    #student-hub-nav {
+      display: none;
+    }
+  }
+}

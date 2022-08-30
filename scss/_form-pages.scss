@@ -1,0 +1,112 @@
+.main-form {
+  border: 1px solid #e7e4e4;
+  border-radius: 0.4rem;
+  padding: 0rem 0.75rem;
+  #form-header {
+    h2 {
+      @include h2-style();
+      font-size: 1.3rem;
+      margin: 0.5rem 0rem;
+    }
+    hr {
+      @include heading-hr();
+    }
+  }
+  fieldset {
+    border: none;
+    padding: 0rem;
+    margin: 0;
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    input {
+      border: 1px solid #b3b3b3;
+      width: 80%;
+      padding: 0.3rem;
+    }
+    select {
+      border: 1px solid #b3b3b3;
+      width: 80%;
+      padding: 0.3rem;
+    }
+  }
+  #form-actions {
+    padding: 1rem 0rem;
+    button {
+      @include button1-style;
+    }
+    a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #4c858b;
+    }
+  }
+}
+#form-header {
+  width: 100%;
+  display: block;
+  h1 {
+    max-width: none;
+  }
+}
+@media (min-width: 768px) {
+  .main-form {
+    #form-header {
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+    fieldset {
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 1rem 0;
+      }
+      .field-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        div {
+          width: fit-content;
+          label {
+            font-size: 1.2rem;
+          }
+          input {
+            width: 15rem;
+            padding: 0.5rem;
+          }
+          select {
+            width: 15rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+    #form-actions {
+      button {
+        width: 9.25rem;
+      }
+    }
+  }
+  #form-footer {
+    text-align: center;
+    #logo-footer h1 {
+      max-width: 100%;
+    }
+    div {
+      width: auto;
+      margin: 0;
+    }
+    #address-footer {
+      padding: 1rem 0;
+      display: block;
+
+      p {
+        padding: 0.5rem 0;
+        width: unset;
+      }
+    }
+  }
+}
